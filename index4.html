@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+</head>
+<body>
+    <h1>Заголовок H1</h1>
+    <h2>Заголовок H2</h2>
+    <p>Первый параграф.</p>
+    
+    <video controls>
+        <source src="mспокойной-ночи.mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+    </video>
+
+    <form id="myForm">
+        <input type="text" id="name" placeholder="Имя" required><br>
+        <input type="email" id="email" placeholder="E-mail" required><br>
+        <input type="text" id="phone" placeholder="Телефон" required><br>
+        <input type="date" id="date"><br>
+        <textarea id="comment" placeholder="Комментарий" required></textarea><br>
+        <button type="submit">Отправить</button>
+
+        <div id="errorMessages" style="color: red;"></div>
+    </form>
+
+    <div id="successMessage" style="display: none;"></div>
+
+
+    <script src="script3.js"></script>
+    
+</body>
+</html>

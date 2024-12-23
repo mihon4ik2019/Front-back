@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img.jpg" alt="Тут будет логотип" width="65px">
+        </div>
+        <div class="logo-content">
+            <p class="logo-text">Группа ЭФБО-10-23</p>
+            <p class="logo-text">Сахаров Михаил Сергеевич</p>
+        </div>
+    </header>
+    <nav class="menu">
+        <a class="menu-item" href="index.html">Главная</a>
+        <a class="menu-item" href="index3.html">Первый семестр</a>
+        <a class="menu-item" href="#">Второй семестр</a>
+        <a class="menu-item" href="index2.html">Услуги</a>
+        <a class="menu-item" href="#">Авторизация</a>
+    </nav>
+    <main class="main">
+        <aside class="aside">
+            <h3 class="aside-title">Навигация по странице</h3>
+            <div class="aside-content">
+                <a class="aside-text" href="#section-front">Фронтенд</a>
+                <a class="aside-text" href="#section-back">Бэкенд</a>    
+            </div>
+        </aside>
+        <section class="section">
+            <h2 class="section-title">Разработка веб-приложений</h2>
+            <div class="section-images">
+                <div class="section-images-item">
+                    <a href="#">
+                        <img class="section-image" src="desktop-computer-concept-illustration_114360-13052.jpg" alt="картинка" width="300px">
+                        <p class="section-images-text">Сайт-визитка</p>
+                    </a>
+                    <button id="openModal">Заказать</button>
+                </div>
+                <div class="section-images-item">
+                    <a href="#">
+                        <img class="section-image" src="desktop-computer-concept-illustration_114360-13052.jpg" alt="картинка" width="300px">
+                        <p class="section-images-text">Корпоративный сайт</p>    
+                    </a>
+                    <button id="openModal">Заказать</button>
+                </div>
+                <div class="section-images-item">
+                    <a href="#">
+                        <img class="section-image" src="desktop-computer-concept-illustration_114360-13052.jpg" alt="картинка" width="300px">
+                        <p class="section-images-text">Интернет магазин</p>    
+                    </a>
+                    <button id="openModal">Заказать</button>
+                </div>
+            </div>
+            <div class="section-content">
+                <p class="section-text">...</p>
+                <p class="section-text">...</p>
+            </div>
+        </section>
+        <div id="modal" class="modal">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+                <form id="contactForm">
+                    <h2>Разработка веб-приложений</h2>
+                    <p>Заполните форму и мы обязательно свяжемся с вами в ближайшее время для уточнения деталей</p>
+                    <label for="name">Как вас зовут</label>
+                    <input type="text" placeholder="например Иванов Иван Иванович" id="name" name="name" required>
+                    <label for="email">Ваш e-mail</label>
+                    <input type="email" placeholder="test@mail.ru" id="email" name="email" required>
+                    <label for="telephone" id="telephone" name="telephone">Телефон</label>
+                    <input type="tel" placeholder="+7 919 999 99 99" required>
+                    <label for="country">Страна</label>
+                    <select name="select">
+                        <option selected value="s1">Россия</option>
+                        <option value="s2">США</option>
+                        <option value="s3">Китай</option>
+                        <option value="s4">Беларусь</option>
+                    </select>
+                    <label for="start">Дата</label>
+                    <input type="date" id="start" name="trip-start" min="2000-01-01" max="2027-12-31" required>
+                    <label for="comments">Комментарий</label>
+                    <textarea id="comments" name="comments"></textarea>
+                    <div class="check">
+                        <input type="checkbox">
+                        <p>Согласен на обработку моих персональных данных</p>
+                    </div>
+                    <button type="submit">Отправить заявку</button>
+                </form>
+            </div>
+            <div id="successMessage" style="display:none;"></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer-title">@Сахаров Михаил Сергеевич, 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
